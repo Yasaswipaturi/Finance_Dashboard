@@ -1,88 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Finance Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Tanveer Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    h1, h2 {
+      color: #ff6600;
+    }
+    .section {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .image {
+      width: 100%;
+      max-height: 300px;
+      object-fit: fit;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    .icon {
+      width: 40px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    a.button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ff6600;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+    a.button:hover {
+      background-color: #e65c00;
+    }
+  </style>
 </head>
 <body>
-    <h1>Personal Finance Dashboard</h1>
-    
-    <div class="add-transaction-section">
-        <h2>Add Transaction</h2>
-        <div class="form-container">
-            <form id="transactionForm">
-                <label for="type">Type:</label>
-                <select id="type">
-                    <option value="Income">Income</option>
-                    <option value="Expense">Expense</option>
-                </select>
 
-                <label for="category">Category:</label>
-                <input type="text" id="category" value="work">
+  <h1>Tanveer Hussain Mohammed</h1>
 
-                <label for="amount">Amount:</label>
-                <input type="number" id="amount" step="0.01" value="10.00" min="0">
+  
 
-                <label for="date">Date:</label>
-                <input type="date" id="date" value="2025-04-16">
+  <div class="section">
+    <h2>About Me</h2>
+    <p>I’m Tanveer Hussain, a passionate Site Engineer with 2.5 years of experience at AR Constructions Private Limited, focused on delivering high-quality construction projects on time and within budget. I'm also an aspiring tech professional, enthusiastic about using technology to improve operations and insights.</p>
+  </div>
 
-                <button type="submit">Add Transaction</button>
-            </form>
-        </div>
-    </div>
+  <div class="section">
+    <h2><img class="icon" src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png" alt="Education">Education</h2>
+    <p><strong>University:</strong> Kakatiya University<br>
+       <strong>Degree:</strong> Civil Engineering</p>
+    <p>Skills gained: Site supervision, project coordination, technical problem-solving.</p>
+  </div>
 
-    <div class="dashboard-section">
-        <h2>Dashboard</h2>
-        <div>
-            <label for="month">Select Month:</label>
-            <select id="month">
-                <option value="April 2025">April 2025</option>
-            </select>
+  <div class="section">
+    <h2><img class="icon" src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Tools Icon">Tools & Skills</h2>
+    <p>Proficient in AutoCAD, Revit Architecture, and project management. I thrive in fast-paced environments where precision and efficiency matter.</p>
+  </div>
 
-            <div id="summary">
-                <p>Income: $<span id="income">20.00</span></p>
-                <p>Expenses: $<span id="expenses">10.00</span></p>
-                <p>Balance: $<span id="balance">10.00</span></p>
-            </div>
-        </div>
-    </div>
+  <div class="section">
+    <h2>Project: Personal Finance Dashboard</h2>
+    <img class="image" src="./Dashboard.webp" alt="Personal Finance Dashboard Screenshot">
+    <p>An interactive web-based dashboard to help users manage personal finances efficiently.</p>
+    <ul>
+      <li>Add transactions with type (Income/Expense), category, amount, and date</li>
+      <li>Dynamic monthly totals for Income, Expenses, and Balance</li>
+      <li>Filter data by month</li>
+      <li>Detailed transaction history table</li>
+    </ul>
+    <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+    <a class="button" href="./Dashboard.html" target="_blank">Open Personal Finance Dashboard</a>
+  </div>
 
-    <div class="transactions-section">
-        <h2>Transaction History</h2>
-        <table id="transactionTable">
-            <tr>
-                <th>TYPE</th>
-                <th>CATEGORY</th>
-                <th>AMOUNT</th>
-                <th>DATE</th>
-                <th>MONTH</th>
-            </tr>
-            <tr>
-                <td>Income</td>
-                <td>work</td>
-                <td>10.00</td>
-                <td>2025-04-16</td>
-                <td>April 2025</td>
-            </tr>
-            <tr>
-                <td>Income</td>
-                <td>work</td>
-                <td>10.00</td>
-                <td>2025-04-16</td>
-                <td>April 2025</td>
-            </tr>
-            <tr>
-                <td>Expense</td>
-                <td>work</td>
-                <td>10.00</td>
-                <td>2025-04-16</td>
-                <td>April 2025</td>
-            </tr>
-        </table>
-    </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
